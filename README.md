@@ -1,6 +1,6 @@
 # Deep Metafeatures
 
-This repository contains a metafeature model that takes in a tensor version of a data set which it extracts a vector representation of using attention. This vector serves to ideally be more informative metafeatures. The model as a whole contains the metafeature model and a meta model which are trained and evaluated together as one.
+This repository contains a metafeature model that takes in a tensor version of a data set which it extracts a vector representation of using deep learning. This vector serves to ideally be more informative metafeatures. The model as a whole contains the metafeature model and a meta model which are trained and evaluated together as one.
 
 ## Instructions for use:
 0. Setup the python enviroment (`pip3 install -r requirements.txt`)
