@@ -1,0 +1,29 @@
+{
+    "__init__": {
+        "activation_name": "relu",
+        "hidden_layer_size": 16,
+        "n_hidden_layers": 1,
+        "use_batch_norm": true,
+        "use_skip": true,
+        "dropout": 0.5,
+        "reduction_name": "max",
+        "loss_function_name": "rmse"
+    },
+    "fit": {
+        "batch_size": 7,
+        "drop_last": false,
+        "learning_rate": 0.0001,
+        "n_epochs": 1,
+        "validation_ratio": 0.1,
+        "patience": 20
+    },
+    "predict_rank": {
+        "batch_size": 2
+    },
+    "predict_regression": {
+        "batch_size": 2
+    },
+    "predict_subset": {
+        "batch_size": 2
+    }
+}

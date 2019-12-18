@@ -1,0 +1,54 @@
+{
+    "meta_model": {
+        "meta_model_activation_name": "relu",
+        "use_batch_norm": true,
+        "use_skip": false,
+        "loss_function_name": "pearson_loss",
+
+        "hidden_state_size": 16,
+        "lstm_n_layers": 2,
+        "dropout": 0.1,
+        "reduction_name": "mean",
+
+        "output_n_hidden_layers": 1,
+        "output_hidden_layer_size": 8
+    },
+    "metafeature_model": {
+        "inp_dim": 1,
+        "col_h": 8,
+        "col_n_head": 2,
+        "row_h": 16,
+        "row_n_head": 2,
+        "out_h": 32,
+        "out_n_head": 2,
+        "col_num_encoder_layers": 2,
+        "col_num_decoder_layers": 2,
+        "col_dim_feedforward": 16,
+        "row_num_encoder_layers": 2,
+        "row_num_decoder_layers": 2,
+        "row_dim_feedforward": 16,
+        "out_num_encoder_layers": 2,
+        "out_num_decoder_layers": 2,
+        "out_dim_feedforward": 16,
+        "max_subset_size": 4000,
+        "min_n_subsets": 4,
+        "metafeature_model_activation_name": "relu",
+        "compressor_name": "attention"
+    },
+    "fit": {
+        "n_epochs": 1,
+        "learning_rate": 0.0001,
+        "batch_size": 1024,
+        "validation_ratio": 0.1,
+        "patience": 20
+    },
+    "predict_regression": {
+        "batch_size": 1024
+    },
+    "predict_rank": {
+        "batch_size": 1024
+    },
+    "predict_subset": {
+        "batch_size": 1024
+    }
+}

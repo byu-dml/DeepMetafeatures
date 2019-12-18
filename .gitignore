@@ -1,0 +1,14 @@
+__pycache__/
+data/*.json
+.idea/
+env/
+dev_results/
+rescore/
+.cache/
+tmp/
+leaderboards
+prod_results
+dev_tuning_output
+datasets
+dmfenv
+dmfenv_remote

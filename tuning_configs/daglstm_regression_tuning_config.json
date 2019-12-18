@@ -1,0 +1,164 @@
+{
+    "attributes": {
+        "meta_model_activation_name": {
+            "type": "categorical",
+            "values": ["relu", "leaky_relu"]
+        },
+        "use_batch_norm": {
+            "type": "bool"
+        },
+        "use_skip": {
+            "type": "bool"
+        },
+        "hidden_state_size": {
+            "type": "int",
+            "min": 8,
+            "max": 256,
+            "step": 2
+        },
+        "lstm_n_layers": {
+            "type": "int",
+            "min": 1,
+            "max": 4,
+            "step": 1
+        },
+        "dropout": {
+            "type": "float",
+            "min": 0,
+            "max": 0.8,
+            "step": 0.05
+        },
+        "reduction_name": {
+            "type": "categorical",
+            "values": ["mean", "sum", "max", "median"]
+        },
+        "output_n_hidden_layers": {
+            "type": "int",
+            "min": 0,
+            "max": 8,
+            "step": 1
+        },
+        "output_hidden_layer_size": {
+            "type": "int",
+            "min": 8,
+            "max": 256,
+            "step": 2
+        },
+        "col_h": {
+            "type": "int",
+            "min": 4,
+            "max": 64,
+            "step": 2
+        },
+        "col_n_head": {
+            "type": "int",
+            "min": 1,
+            "max": 4,
+            "step": 1
+        },
+        "row_h": {
+            "type": "int",
+            "min": 4,
+            "max": 64,
+            "step": 2
+        },
+        "row_n_head": {
+            "type": "int",
+            "min": 1,
+            "max": 4,
+            "step": 1
+        },
+        "out_h": {
+            "type": "int",
+            "min": 4,
+            "max": 64,
+            "step": 2
+        },
+        "out_n_head": {
+            "type": "int",
+            "min": 1,
+            "max": 4,
+            "step": 1
+        },
+        "col_num_encoder_layers": {
+            "type": "int",
+            "min": 1,
+            "max": 2,
+            "step": 1
+        },
+        "col_num_decoder_layers": {
+            "type": "int",
+            "min": 1,
+            "max": 4,
+            "step": 1
+        },
+        "col_dim_feedforward": {
+            "type": "int",
+            "min": 8,
+            "max": 64,
+            "step": 2
+        },
+        "row_num_encoder_layers": {
+            "type": "int",
+            "min": 1,
+            "max": 2,
+            "step": 1
+        },
+        "row_num_decoder_layers": {
+            "type": "int",
+            "min": 1,
+            "max": 2,
+            "step": 1
+        },
+        "row_dim_feedforward": {
+            "type": "int",
+            "min": 8,
+            "max": 64,
+            "step": 2
+        },
+        "out_num_encoder_layers": {
+            "type": "int",
+            "min": 1,
+            "max": 8,
+            "step": 1
+        },
+        "out_num_decoder_layers": {
+            "type": "int",
+            "min": 1,
+            "max": 8,
+            "step": 1
+        },
+        "out_dim_feedforward": {
+            "type": "int",
+            "min": 8,
+            "max": 256,
+            "step": 2
+        },
+        "max_subset_size": {
+            "type": "int",
+            "min": 2000,
+            "max": 4000,
+            "step": 500
+        },
+        "min_n_subsets": {
+            "type": "int",
+            "min": 2,
+            "max": 8,
+            "step": 1
+        },
+        "metafeature_model_activation_name": {
+            "type": "categorical",
+            "values": ["relu", "leaky_relu"]
+        },
+        "compressor_name": {
+            "type": "categorical",
+            "values": ["attention", "sumnorm", "mean"]
+        },
+        "learning_rate": {
+            "type": "float",
+            "min": 2e-5,
+            "max": 1e-2,
+            "step": 1e-5
+        }
+    }
+}
